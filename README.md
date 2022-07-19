@@ -15,6 +15,15 @@ Users should be able to:
 
 ### Screenshot
 
+-Desktop
+
+![](design/1.jpeg)
+
+-Mobile
+
+![](design/2.jpeg)
+
+
 ### Links
 
 - Solution URL: [https://onfiire.github.io/Product-Card/](https://onfiire.github.io/Product-Card/)
