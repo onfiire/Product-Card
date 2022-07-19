@@ -42,13 +42,14 @@ picture {
   html,
   body {
     height: 100%;
+    
   }
 
 body {
   
   text-rendering: optimizeSpeed;
   line-height: 1.2;
-  height: 100%;
+  width: 1440px;
 }
 
 .container {
@@ -89,6 +90,7 @@ h2 {
     line-height: 31px;
     color: hsl(212, 21%, 14%);
     margin-top: 23px;
+    
 }
 
 p {
