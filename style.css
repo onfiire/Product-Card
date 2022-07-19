@@ -1,3 +1,167 @@
-root {
-    
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&family=Montserrat:wght@500;700&display=swap');
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font: inherit;
 }
+
+ul[role='list'],
+ol[role='list'] {
+  list-style: none;
+}
+
+html:focus-within {
+    scroll-behavior: smooth;
+  }
+
+img,
+picture {
+  max-width: 100%;
+  display: block;
+  height: 450px;
+  justify-self: end;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+
+  @media (prefers-reduced-motion: reduce) {
+    html:focus-within {
+     scroll-behavior: auto;
+    }
+    
+    *,
+    *::before,
+    *::after {
+      animation-duration: 0.01ms !important;
+      animation-iteration-count: 1 !important;
+      transition-duration: 0.01ms !important;
+      scroll-behavior: auto !important;
+    }
+  }
+
+body {
+  min-height: 100vh;
+  text-rendering: optimizeSpeed;
+  line-height: 1.2;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    height: 925px;
+    background-color: hsl(30, 38%, 92%);
+    align-items: center;
+}
+
+.grid { 
+    background-color: white;
+    width: 300px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    padding-left: 30px;
+    height: 450px;
+    align-items: center;
+}
+
+button {
+    display: block;
+}
+
+h2 {
+    font-family: Montserrat;
+    color: hsl(228, 12%, 48%);
+    font-size: 11px;
+    margin-top: 33px;
+    letter-spacing: 5px;
+}
+
+.product {
+    font-family: Fraunces;
+    font-size: 33px;
+    width: 200px;
+    line-height: 31px;
+    color: hsl(212, 21%, 14%);
+    margin-top: 23px;
+}
+
+p {
+    width: 230px;
+    color: hsl(228, 12%, 48%);
+    line-height: 23px;
+    margin-top: 24px;
+    font-family: Montserrat;
+    font-size: 14px;
+}
+
+.price {
+    color: rgb(76, 128, 76);
+    display: inline-block;
+    font-family: Fraunces;
+    font-size: 33px;
+    color: hsl(158, 36%, 37%);
+    width: 130px;
+    margin-top: 27px
+}
+
+.discount {
+    display: inline-block;
+    width: 90px;
+    padding-bottom: 5px;
+    text-decoration: line-through;
+    font-size: 13px;
+    padding-left: 15px;
+    font-family: Montserrat;
+}
+
+.button {
+    background-color: hsl(158, 36%, 37%);
+    border: none;
+    color: white;
+    width: 240px;
+    margin-top: 21px;
+    height: 47px;
+    border-radius: 10px;
+    font-family: Montserrat;
+    font-size: 14px;
+    display: inline-flex;
+    cursor: pointer;
+    padding-top: 15px;
+    padding-left: 36px;
+}
+
+.button:hover {
+    background-color: rgb(22, 61, 22);
+}
+
+svg {
+   margin-right: 10px;
+   margin-left: 15px;
+   width: 20px;
+   height: 20px;
+   align-self: top;
+   margin-top: 0px;
+}
+
+@media screen and (max-width: 768px){
+
+.container {
+  grid-template-columns: 1fr;
+}
+
+img,
+picture {
+  justify-self: center;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 0px;
+  border-top-right-radius: 10px;
+  
+}
+
+.grid { 
+    justify-self: center;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+}
+    
