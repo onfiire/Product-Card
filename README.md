@@ -27,7 +27,6 @@ Users should be able to:
 ### Links
 
 - Solution URL: [https://onfiire.github.io/Product-Card/](https://onfiire.github.io/Product-Card/)
-- Live Site URL: [https://onfiire.github.io/Product-Card/](https://onfiire.github.io/Product-Card/)
 
 ## My process
 
